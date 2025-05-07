@@ -185,11 +185,11 @@ const Navbar = () => {
 
   return (
     <header className="relative z-50 w-full">
-      <div className={`fixed top-[45px] left-0 w-full z-40 bg-white ${shouldShowMegaMenu ? '' : 'border-b-3 border-[#2973B1]'} shadow-sm transition-all duration-300`}>
+      <div className={`fixed top-[40px] left-0 w-full z-40 bg-white ${shouldShowMegaMenu ? '' : 'border-b-3 border-[#2973B1]'} shadow-sm transition-all duration-300`}>
         <div className="container mx-auto flex justify-between items-center px-4 sm:px-6 py-4">
           <div className="flex items-center space-x-2">
             <img src="/your-logo.png" className="h-6" alt="logo" />
-            <span className="text-xl font-semibold text-[#2973B1]">YourBrand</span>
+            <span className="text-xl font-semibold text-[#2973B1]">BrandName</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -266,7 +266,7 @@ const Navbar = () => {
 
       {/* Desktop Mega Menu */}
       <div
-        className={`hidden lg:block fixed top-[120px] left-0 w-full z-30 transform origin-top transition-all duration-900 ease-in border-b-3 border-[#2973B1] ${
+        className={`hidden lg:block fixed top-[110px] left-0 w-full z-30 transform origin-top transition-all duration-400 ease-in border-b-3 border-[#2973B1] ${
           activeMenu && shouldShowMegaMenu ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0 pointer-events-none'
         }`}
         style={{ backgroundColor: '#f5f5f5' }}
@@ -299,3 +299,13 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
+
+
+
+
+
+
+

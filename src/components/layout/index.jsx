@@ -29,7 +29,7 @@ const DefaultLayout = () => {
     <div className="flex flex-col min-h-screen">
       <Topbar />
       <Navbar />
-      <main className="flex-grow pt-[104px] px-4">
+      <main className="flex-grow pt-[104px] ">
         <Outlet />
       </main>
     </div>
