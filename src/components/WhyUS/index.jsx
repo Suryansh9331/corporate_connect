@@ -51,7 +51,7 @@ const WhyUsSection = () => {
   <div className="bg-[#0a243b] p-6 rounded flex flex-col items-center text-center">
     <Clock size={36} className="mb-4" />
     <p className="text-lg font-bold mb-4">Every minute</p>
-    <p className="text-sm mb-1">6 people are hired on LinkedIn</p>
+    <p className="text-sm mb-1">6 people are hired on Corporate Connect</p>
   </div>
 
   {/* Stat 2 */}

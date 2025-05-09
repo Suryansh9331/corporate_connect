@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import DefaultLayout from '../components/layout';
 import Home from '../pages/Home';
+import ContactUs from "../pages/contact";
 // import About from '../pages/About';
 // import Contact from '../pages/Contact';
 // import Login from '../pages/auth/Login';
@@ -11,8 +12,8 @@ const AppRoutes = () => {
     <Routes>
       <Route element={<DefaultLayout />}>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} /> */}
+        {/* <Route path="/about" element={<About />} /> */}
+      <Route path="/contact" element={<ContactUs />} />
       </Route>
 
      

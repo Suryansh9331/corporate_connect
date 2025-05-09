@@ -9,7 +9,7 @@ const megaMenuData = {
       heading: 'Source and engage',
       items: [
         {
-          title: 'LinkedIn Recruiter',
+          title: 'Corporate Connect Recruiter',
           description: 'Find and hire qualified candidates fast',
           href: '#',
         },
@@ -19,8 +19,8 @@ const megaMenuData = {
           href: '#',
         },
         {
-          title: 'LinkedIn Talent Insights',
-          description: 'Real-time data for your hiring decisions',
+          title: 'Corporate talent insight',
+          description: '',
           href: '#',
         },
       ],
@@ -30,12 +30,12 @@ const megaMenuData = {
       heading: 'Post and attract',
       items: [
         {
-          title: 'LinkedIn Jobs',
+          title: 'Corporate ConnectJobs',
           description: 'Target your jobs to the right people',
           href: '#',
         },
         {
-          title: 'LinkedIn Career Pages',
+          title: ' Career Pages',
           description: 'Attract talent with employer branding',
           href: '#',
         },
@@ -52,15 +52,11 @@ const megaMenuData = {
           href: '#',
         },
         {
-          title: 'Recruiter Lite',
-          description: 'Recruiter for low-volume hiring',
+          title: 'Small Bussiness',
+          description: '',
           href: '#',
         },
-        {
-          title: 'LinkedIn Talent Insights',
-          description: 'Real-time data for your hiring decisions',
-          href: '#',
-        },
+      
       ],
      
     },
@@ -68,14 +64,14 @@ const megaMenuData = {
       heading: 'Company type',
       items: [
         {
-          title: 'LinkedIn Recruiter',
-          description: 'Find and hire qualified candidates fast',
+          title: 'Search & staffing agency',
+          description: '',
           href: '#',
         },
        
         {
-          title: 'LinkedIn Talent Insights',
-          description: 'Real-time data for your hiring decisions',
+          title: 'Nonprofit',
+          description: '',
           href: '#',
         },
       ],
@@ -188,10 +184,12 @@ const Navbar = () => {
       <div className={`fixed top-[40px] left-0 w-full z-40 bg-white ${shouldShowMegaMenu ? '' : 'border-b-3 border-[#2973B1]'} shadow-sm transition-all duration-300`}>
         <div className="container mx-auto flex justify-between items-center px-4 sm:px-6 py-4">
           <div className="flex items-center space-x-2">
+         <a href="/" className='flex items-center space-x-2'>
             <img src="/your-logo.png" className="h-6" alt="logo" />
             <span className="text-xl font-semibold text-[#2973B1]">BrandName</span>
+            </a>
           </div>
-
+       
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8 font-semibold text-[#2973B1] text-sm">
             {navItems.map((name) => (
@@ -211,7 +209,7 @@ const Navbar = () => {
               </div>
             ))}
             <div className="border-l border-gray-900 h-10 opacity-25 mr-4 "></div>
-            <a href="#" className="border border-[#2973B1] px-4 py-2 rounded hover:bg-blue-50 font-semibold">
+            <a href="/contact" className="border border-[#2973B1] px-4 py-2 rounded hover:bg-blue-50 font-semibold">
               Contact Us
             </a>
           </nav>
@@ -257,7 +255,7 @@ const Navbar = () => {
             ))}
 
             {/* Contact Us */}
-            <a href="#" className="block text-center mt-4 border border-[#2973B1] px-4 py-2 rounded hover:bg-blue-50 font-semibold">
+            <a href="/contact" className="block text-center mt-4 border border-[#2973B1] px-4 py-2 rounded hover:bg-blue-50 font-semibold">
               Contact Us
             </a>
           </div>
@@ -266,7 +264,7 @@ const Navbar = () => {
 
       {/* Desktop Mega Menu */}
       <div
-        className={`hidden lg:block fixed top-[110px] left-0 w-full z-30 transform origin-top transition-all duration-400 ease-in border-b-3 border-[#2973B1] ${
+        className={`hidden lg:block fixed top-[110px] left-0 w-full z-30 transform origin-top transition-all duration-200 ease-in border-b-3 border-[#2973B1] ${
           activeMenu && shouldShowMegaMenu ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0 pointer-events-none'
         }`}
         style={{ backgroundColor: '#f5f5f5' }}

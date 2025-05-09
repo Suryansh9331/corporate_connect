@@ -1,9 +1,10 @@
 import React from "react";
+import ContactStickyButton from "../../components/ContactSticky";
 
 import HeroSection from "../../components/Hero";
 import LinkedInRecruiter from "../../components/linkedinRecruiter";
 import WhyUsSection from "../../components/WhyUS";
-import ResourcesSection from "../../components/ResourcesSection";
+import ResourceSection from "../../components/Resources";
 import StatsSection from "../../components/143m";
 import CTASection from "../../components/ContactUs";
 import LinkedInHiringProducts from "../../components/CardSection";
@@ -14,7 +15,7 @@ import bg_banner3 from "../../assets/images/bg_banner3.svg";
 
 import profile from "../../assets/images/profile.png";
 
-import { FaRegComments } from "react-icons/fa";
+
 
 import video from "../../assets/videos/linkedin_recruiter.mp4";
 
@@ -82,7 +83,7 @@ const Home = () => {
 
       <LinkedInRecruiter
         heading=" Get started with our core products "
-        title=" LinkedIn Jobs"
+        title=" Corporate Connect Jobs"
         description="A hiring platform to quickly source, connect with, and manage qualified candidates."
         bullets={bullets2}
         videoSrc="https://business.linkedin.com/content/dam/me/business/en-us/talent-solutions-lodestone/body/videos/job-616x468.mp4"
@@ -94,7 +95,7 @@ const Home = () => {
       />
       <LinkedInRecruiter
         heading="Get started with our core products  "
-        title="LinkedIn Career Pages"
+        title="Corporate Connect Career Pages"
         description="A hiring platform to quickly source, connect with, and manage qualified candidates."
         bullets={bullets3}
         videoSrc="https://business.linkedin.com/content/dam/me/business/en-us/talent-solutions-lodestone/body/videos/career-616x468.mp4"
@@ -129,7 +130,7 @@ const Home = () => {
           {/* Right Side: Testimonial Text */}
           <div className="text-center md:text-left max-w-3xl">
             <p className="text-xl md:text-2xl text-gray-900 font-light leading-relaxed">
-              LinkedIn Talent Solutions has helped us hire and develop talent
+              Corporate Connect has helped us hire and develop talent
               that suit our vision in a seamless and effective way. As we
               continue to grow, building strength across the employee life-cycle
               will be key to sustaining our people success.”
@@ -143,22 +144,23 @@ const Home = () => {
       </section>
 
       <section className="lg:px-40 lg:pt-10 pb-20">
-        <ResourcesSection />
+        <ResourceSection />
       </section>
 
       <section className="lg:pb-20">
         <CTASection />
       </section>
 
-      <div className="flex items-center justify-center space-x-2  p-10">
-        <FaRegComments size={36} color="#114f7c" />
-        <a
-          href="#"
-          className="text-[24px] font-medium  text-[#114f7c] hover:underline"
-        >
-          Ready to get started? Click here to chat live with a sales consultant
-        </a>
-      </div>
+      {/* <div className="flex flex-col sm:flex-row items-center justify-center gap-2 p-6 text-center sm:text-left">
+  <FaRegComments size={36} color="#114f7c" />
+  <a
+    href="#"
+    className="text-lg sm:text-xl md:text-2xl font-medium text-[#114f7c] hover:underline"
+  >
+    Ready to get started? Click here to chat live with a sales consultant
+  </a>
+</div> */}
+      <ContactStickyButton />
     </div>
   );
 };
