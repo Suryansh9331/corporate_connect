@@ -3,7 +3,7 @@ import React from "react";
 const CTASection = ({
   headline = "Start hiring with LinkedIn Talent Solutions.",
   buttonText = "Contact us",
-  buttonLink = "#",
+  buttonLink = "/contact",
   bgColor = "#56687a",
 }) => {
   return (

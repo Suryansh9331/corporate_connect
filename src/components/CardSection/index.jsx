@@ -24,7 +24,7 @@ const LinkedInHiringProducts = () => {
                 "Automated job targeting to relevant candidates",
                 "Option to promote jobs with flexible daily budget",
               ],
-              button: { text: "Post a Job", link: "#" },
+              button: { text: "Post a Job", link: "/contact" },
             },
             {
               title: "Jobs + Recruiter Lite",
@@ -37,7 +37,7 @@ const LinkedInHiringProducts = () => {
                 "30 InMail messages/month",
                 "20+ search filters",
               ],
-              button: { text: "Get started", link: "#" },
+              button: { text: "Get started", link: "/contact" },
             },
             {
               title: "Jobs + Recruiter",
@@ -51,7 +51,7 @@ const LinkedInHiringProducts = () => {
                 "40+ advanced search filters",
                 "ATS integrations",
               ],
-              button: { text: "Contact us", link: "#" },
+              button: { text: "Contact us", link: "/contact" },
             },
           ].map((card, index) => (
             <div

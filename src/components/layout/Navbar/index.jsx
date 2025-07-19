@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { FiChevronRight } from 'react-icons/fi';
-
+import logo from '../../../assets/images/logo.png';
 
 const megaMenuData = {
   'Products': [
@@ -183,12 +183,12 @@ const Navbar = () => {
     <header className="relative z-50 w-full">
       <div className={`fixed top-[40px] left-0 w-full z-40 bg-white ${shouldShowMegaMenu ? '' : 'border-b-3 border-[#2973B1]'} shadow-sm transition-all duration-300`}>
         <div className="container mx-auto flex justify-between items-center px-4 sm:px-6 py-4">
-          <div className="flex items-center space-x-2">
-         <a href="/" className='flex items-center space-x-2'>
-            <img src="/your-logo.png" className="h-6" alt="logo" />
-            <span className="text-xl font-semibold text-[#2973B1]">BrandName</span>
+         
+         <a href="/">
+            <img src={logo} className="h-14 w-50" alt="logo" />
+          
             </a>
-          </div>
+         
        
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8 font-semibold text-[#2973B1] text-sm">

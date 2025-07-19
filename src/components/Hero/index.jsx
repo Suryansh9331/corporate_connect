@@ -11,7 +11,7 @@ const HeroSection = () => {
           <h1 className="text-3xl sm:text-4xl font-light text-gray-900 leading-snug">
             Hire the people <br /> you need
           </h1>
-         <a href="#"> 
+         <a href="/contact"> 
           <button className="mt-6 bg-[#0073b1] text-white font-semibold px-6 py-3 rounded hover:bg-[#485d69] transition">
             Contact us
           </button>
@@ -44,7 +44,7 @@ const HeroSection = () => {
           <h1 className="text-4xl md:text-5xl xl:text-6xl font-light text-[#262626] leading-snug">
             Hire the people <br /> you need
           </h1>
-         <a href="#">
+         <a href="/contact">
           <button className="mt-6 bg-[#0073b1] text-white font-semibold px-6 py-3 rounded hover:bg-[#485d69] transition">
             Contact us
           </button>

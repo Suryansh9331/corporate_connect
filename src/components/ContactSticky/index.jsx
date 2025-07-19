@@ -66,7 +66,7 @@ export default function ContactStickyButton() {
             <p className="text-lg font-semibold text-[#4b4843] mb-6">
               Want to learn more about our talent solutions? Let us help:
             </p>
-            <a href="#">
+            <a href="/contact">
               <button className="bg-[#485d69] hover:bg-[#0077b5] ml-30 text-white font-semibold py-3 px-6 rounded">
                 Contact us
               </button>
@@ -77,7 +77,7 @@ export default function ContactStickyButton() {
               <a href="#" className="block hover:underline">
                 Chat with a sales consultant.
               </a>
-              <a href="#" className="block hover:underline">
+              <a href="/contact" className="block hover:underline">
                 Existing customer? Click here.
               </a>
             </div>

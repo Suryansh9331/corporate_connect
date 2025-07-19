@@ -77,8 +77,8 @@ const Home = () => {
         bgImage={bg_banner}
         primaryBtnText="Learn more"
         secondaryBtnText="Contact us"
-        primaryBtnLink="#"
-        secondaryBtnLink="#"
+        primaryBtnLink="/contact"
+        secondaryBtnLink="/contact"
       />
 
       <LinkedInRecruiter
@@ -90,8 +90,8 @@ const Home = () => {
         bgImage={bg_banner2}
         primaryBtnText="Learn more"
         secondaryBtnText="Contact us"
-        primaryBtnLink="#"
-        secondaryBtnLink="#"
+        primaryBtnLink="/contact"
+        secondaryBtnLink="/contact"
       />
       <LinkedInRecruiter
         heading="Get started with our core products  "
@@ -102,8 +102,8 @@ const Home = () => {
         bgImage={bg_banner3}
         primaryBtnText="Learn more"
         secondaryBtnText="Contact us"
-        primaryBtnLink="#"
-        secondaryBtnLink="#"
+        primaryBtnLink="/contact"
+        secondaryBtnLink="/contact"
       />
 
       <div>
@@ -152,7 +152,7 @@ const Home = () => {
       </section>
 
       {/* <div className="flex flex-col sm:flex-row items-center justify-center gap-2 p-6 text-center sm:text-left">
-  <FaRegComments size={36} color="#114f7c" />
+  <FaRegComments size={36} color="/contact114f7c" />
   <a
     href="#"
     className="text-lg sm:text-xl md:text-2xl font-medium text-[#114f7c] hover:underline"
